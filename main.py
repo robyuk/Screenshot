@@ -14,7 +14,7 @@ outfilext='.png'
 
 while True:
   timestamp=strftime('%Y%m%d%H%M%S')
-  #with mss() as screen:
-    #screen.shot(output=f'{outfileprefix}{timestamp}{outfilext}')
+  with mss() as screen:
+    screen.shot(output=f'{outfileprefix}{timestamp}{outfilext}')
   print(f'{outfileprefix}{timestamp}{outfilext}')
   sleep(600)
